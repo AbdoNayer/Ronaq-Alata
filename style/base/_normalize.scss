@@ -1,0 +1,67 @@
+// Font Import Cdn
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Tajawal:wght@400;700&display=swap");
+
+// Local Style Page
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200 !important;
+}
+
+// Style Scroll Site
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #166434;
+  border: 1px solid #166434;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #166434;
+}
+
+// selection
+::selection {
+  background: #166434;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #166434;
+  color: #fff;
+}
+
+// Style Form Validation
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: #166434;
+  opacity: 1;
+}
+
+.back{
+  transform: translate(0) !important;
+}
+
+// Style Owl Carousel
+.owl-carousel {
+  display: block;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  direction: ltr;
+}
