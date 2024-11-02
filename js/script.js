@@ -31,18 +31,14 @@ $(document).ready(function () {
     if ($(window).width() > 767) {
     }
     if ($(this).scrollTop() > 30) {
-      $("header").addClass("!bg-white !shadow-md");
-      $("header ul li a").addClass("!text-black");
       $(".fix-up").show();
     } else {
-      $("header").removeClass("!bg-white !shadow-md");
-      $("header ul li a").removeClass("!text-black");
       $(".fix-up").hide();
     }
   });
 
   // Click Add class Link
-  $(document).on("click", "header ul li", function (e) {
+  $(document).on("click", "nav ul li", function (e) {
     e.preventDefault();
     $(this).addClass("active").siblings().removeClass("active");
   });
@@ -72,7 +68,7 @@ $(document).ready(function () {
   // Scroll For Section
   $(document).on(
     "click",
-    "header ul li a, .list-footer li a, .info-tab a",
+    "nav ul li a, .list-footer li a, .info-tab a",
     function (e) {
       $("html, body").animate(
         {
@@ -95,5 +91,36 @@ $(document).ready(function () {
     $(".list-head").toggleClass("back");
     $(".overlay").toggleClass("back");
     $("body").toggleClass("overflow-hidden");
+  });
+
+  // Slider Home
+  $(".sliderHome").owlCarousel({
+    loop: true,
+    margin: 1000,
+    center: false,
+    autoplay: true,
+    touchDrag: false,
+    mouseDrag: false,
+    autoplayTimeout: 7000,
+    smartSpeed: 1000,
+    animateOut: "fadeOut",
+    dragEndSpeed: 7000,
+    pagination: true,
+    nav: false,
+    navText: [
+      '<i class="icon-arrow-left"></i>',
+      '<i class="icon-arrow-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
   });
 });
