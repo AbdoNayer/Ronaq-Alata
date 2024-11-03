@@ -2,9 +2,9 @@
 @import url("https://fonts.cdnfonts.com/css/infra");
 
 @font-face {
-    font-family: "Bader";
-    src: url("../../font/bader_al-gorthabia-2.ttf");
-    font-weight: bold;
+  font-family: "Bader";
+  src: url("../../font/bader_al-gorthabia-2.ttf");
+  font-weight: bold;
 }
 
 // Local Style Page
@@ -30,7 +30,7 @@ html[dir="rtl"] {
 
 html[dir="ltr"] {
   body {
-    font-family: 'Infra', sans-serif !important;
+    font-family: "Infra", sans-serif !important;
   }
 }
 
@@ -41,22 +41,22 @@ html[dir="ltr"] {
 }
 
 ::-webkit-scrollbar-track {
-  background: #166434;
-  border: 1px solid #166434;
+  background: #C59946;
+  border: 1px solid #C59946;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #166434;
+  background: #C59946;
 }
 
 // selection
 ::selection {
-  background: #166434;
+  background: #C59946;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #166434;
+  background: #C59946;
   color: #fff;
 }
 
@@ -65,8 +65,38 @@ html[dir="ltr"] {
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
-  color: #166434;
+  color: #C59946;
   opacity: 1;
+}
+
+[multiple]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="week"]:focus,
+select:focus,
+textarea:focus {
+  --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #C59946;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  border-color: #C59946;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .back {

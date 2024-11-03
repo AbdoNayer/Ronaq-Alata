@@ -32,26 +32,26 @@ html[dir=ltr] body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #166434;
-  border: 1px solid #166434;
+  background: #C59946;
+  border: 1px solid #C59946;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #166434;
+  background: #C59946;
 }
 
 ::-moz-selection {
-  background: #166434;
+  background: #C59946;
   color: #fff;
 }
 
 ::selection {
-  background: #166434;
+  background: #C59946;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #166434;
+  background: #C59946;
   color: #fff;
 }
 
@@ -59,8 +59,37 @@ html[dir=ltr] body {
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
-  color: #166434;
+  color: #C59946;
   opacity: 1;
+}
+
+[multiple]:focus,
+[type=date]:focus,
+[type=datetime-local]:focus,
+[type=email]:focus,
+[type=month]:focus,
+[type=number]:focus,
+[type=password]:focus,
+[type=search]:focus,
+[type=tel]:focus,
+[type=text]:focus,
+[type=time]:focus,
+[type=url]:focus,
+[type=week]:focus,
+select:focus,
+textarea:focus {
+  --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #C59946;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  border-color: #C59946;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .back {
@@ -298,4 +327,8 @@ html[dir=ltr] .img-about {
 
 .owl-dots {
   display: none;
+}
+
+.bg-gray-900\/50.dark\:bg-gray-900\/80.fixed.inset-0.z-40 {
+  background-color: transparent !important;
 }/*# sourceMappingURL=global.css.map */
