@@ -6,7 +6,6 @@
 // Font Import Cdn
 @import url("https://fonts.cdnfonts.com/css/infra");
 
-
 // Local Style Page
 * {
   border: 0;
@@ -41,22 +40,22 @@ html[dir="ltr"] {
 }
 
 ::-webkit-scrollbar-track {
-  background: #C59946;
-  border: 1px solid #C59946;
+  background: #c59946;
+  border: 1px solid #c59946;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C59946;
+  background: #c59946;
 }
 
 // selection
 ::selection {
-  background: #C59946;
+  background: #c59946;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #C59946;
+  background: #c59946;
   color: #fff;
 }
 
@@ -65,7 +64,7 @@ html[dir="ltr"] {
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
-  color: #C59946;
+  color: #c59946;
   opacity: 1;
 }
 
@@ -87,12 +86,12 @@ textarea:focus {
   --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: #C59946;
+  --tw-ring-color: #c59946;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
     var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
     calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  border-color: #C59946;
+  border-color: #c59946;
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
     var(--tw-shadow);
   outline: 2px solid transparent;
