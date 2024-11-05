@@ -90,7 +90,7 @@ $(document).ready(function () {
     $(".handle").toggleClass("closed");
     $(".list-head").toggleClass("back");
     $(".overlay").toggleClass("back");
-    $("body").toggleClass("overflow-hidden");
+    $("body").toggleClass("!overflow-hidden");
   });
 
   // Slider Home
@@ -176,6 +176,34 @@ $(document).ready(function () {
       },
       1000: {
         items: 3,
+      },
+    },
+  });
+  // Slider Projects
+  $("#sliderProjects").owlCarousel({
+    loop: true,
+    margin: 0,
+    center: false,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 1000,
+    animateOut: "fadeOut",
+    dragEndSpeed: 7000,
+    pagination: false,
+    nav: false,
+    navText: [
+      '<i class="icon-arrow-left"></i>',
+      '<i class="icon-arrow-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 3,
+      },
+      1000: {
+        items: 6,
       },
     },
   });
