@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "Bader";
-  src: url("../../font/bader_al-gorthabia-2.ttf");
-  font-weight: bold;
-}
-// Font Import Cdn
-@import url("https://fonts.cdnfonts.com/css/infra");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 // Local Style Page
 * {
@@ -23,13 +17,13 @@ body {
 
 html[dir="rtl"] {
   body {
-    font-family: "Bader", sans-serif !important;
+    font-family: "Cairo", sans-serif;
   }
 }
 
 html[dir="ltr"] {
   body {
-    font-family: "Infra", sans-serif !important;
+    font-family: "Cairo", sans-serif;
   }
 }
 
