@@ -316,12 +316,12 @@ nav ul li a::after {
   justify-content: center;
 }
 
-html[dir=ltr] .img-about {
-  transform: scale(-1.1, 1.1);
-}
-
 .owl-dots {
   display: none;
+}
+
+html[dir=ltr] .img-about {
+  transform: scale(-1.1, 1.1);
 }
 
 .bg-gray-900\/50.dark\:bg-gray-900\/80.fixed.inset-0.z-40 {

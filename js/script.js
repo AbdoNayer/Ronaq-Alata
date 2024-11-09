@@ -106,10 +106,10 @@ $(document).ready(function () {
     animateOut: "fadeOut",
     dragEndSpeed: 7000,
     pagination: true,
-    nav: false,
+    nav: true,
     navText: [
-      '<i class="icon-arrow-left"></i>',
-      '<i class="icon-arrow-right"></i>',
+      '<i class="fa-solid fa-chevron-left"></i>',
+      '<i class="fa-solid fa-chevron-right"></i>',
     ],
     responsive: {
       0: {
