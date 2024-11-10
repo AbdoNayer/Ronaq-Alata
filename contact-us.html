@@ -41,7 +41,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="./style/global.css" />
   </head>
-  <body id="Home" class="overflow-hidden">
+  <body id="Home" class="overflow-hidden pt-[115px]">
     <div
       class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"
     ></div>
@@ -83,13 +83,17 @@
     </button>
 
     <!-- Header -->
-    <seaction class="fixed top-0 right-0 w-full z-[99]">
+    <seaction class="fixed top-0 right-0 w-full z-[999]">
       <header class="bg-main p-2 lg:block hidden">
         <div class="container">
           <div class="flex items-center justify-between">
-            <div class=""></div>
+            <div></div>
             <div class="flex items-center gap-4">
-              <a href="" class="text-white border-s border-e px-2">English</a>
+              <a
+                href=""
+                class="lg:text-white text-main border-l border-r px-[10px] flex items-center justify-center"
+                >English</a
+              >
               <ul class="flex items-center lg:flex-row flex-col gap-2">
                 <li>
                   <a
@@ -124,72 +128,83 @@
           </div>
         </div>
       </header>
-      <nav class="bg-secondary py-3">
+      <nav class="bg-secondary py-4">
         <div class="container">
-          <div class="flex items-center">
-            <a href="index.html"
+          <div
+            class="flex items-center lg:justify-normal justify-between w-full relative z-[999]"
+          >
+            <a class="lg:absolute lg:top-[-32px] lg:z-[9999]" href="index.html"
               ><img
-                class="lg:max-w-[60px] max-w-[70px]"
-                src="./images/tree.png"
+                class="max-w-[70px]"
+                loading="lazy"
+                src="./images/logo.png"
                 alt=""
             /></a>
-            <!-- Click BTN On Mobile Open Nav  -->
-            <div class="click-nav lg:hidden block">
-              <div class="handle bg-secondary"></div>
-              <div class="handle bg-secondary"></div>
-              <div class="handle bg-secondary"></div>
+            <div class="flex items-center gap-4">
+              <!-- Lang On Mobile  -->
+              <a
+                href=""
+                class="lg:text-white text-main border rounded-lg w-[100px] h-[40px] lg:hidden flex items-center justify-center lg:m-0 my-2"
+                >English</a
+              >
+              <!-- Click BTN On Mobile Open Nav  -->
+              <div class="click-nav lg:hidden block">
+                <div class="handle bg-main"></div>
+                <div class="handle bg-main"></div>
+                <div class="handle bg-main"></div>
+              </div>
             </div>
             <div
-              class="list-head flex lg:items-center lg:flex-1 lg:justify-between lg:flex-row flex-col lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+              class="list-head flex lg:items-center lg:ps-[70px] lg:flex-1 lg:justify-between lg:flex-row flex-col lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
             >
               <ul class="flex items-center lg:flex-row flex-col">
                 <li
-                  class="overflow-hidden active lg:my-0 my-4 lg:w-auto w-full"
+                  class="overflow-hidden active lg:my-0 my-2 lg:w-auto w-full"
                 >
                   <a
                     href="index.html"
                     data-value="Home"
-                    class="lg:mx-4 relative p-[10px] text-[20px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >الرئيسية</a
                   >
                 </li>
-                <li class="overflow-hidden lg:my-0 my-4 lg:w-auto w-full">
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
                   <a
                     href=""
                     data-value="About"
-                    class="lg:mx-4 relative p-[10px] text-[20px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >من نحن</a
                   >
                 </li>
-                <li class="overflow-hidden lg:my-0 my-4 lg:w-auto w-full">
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
                   <a
                     href=""
                     data-value="Services"
-                    class="lg:mx-4 relative p-[10px] text-[20px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >خدماتنا</a
                   >
                 </li>
-                <li class="overflow-hidden lg:my-0 my-4 lg:w-auto w-full">
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
                   <a
                     href=""
                     data-value="OurValues"
-                    class="lg:mx-4 relative p-[10px] text-[20px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >مشاريعنا</a
                   >
                 </li>
-                <li class="overflow-hidden lg:my-0 my-4 lg:w-auto w-full">
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
                   <a
                     href=""
                     data-value="VisionsMassages"
-                    class="lg:mx-4 relative p-[10px] text-[20px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >المدونة</a
                   >
                 </li>
-                <li class="overflow-hidden lg:my-0 my-4 lg:w-auto w-full">
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
                   <a
                     href="contact-us.html"
                     data-value="CustomersTeams"
-                    class="lg:mx-4 relative p-[10px] text-[20px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >تواصل معنا</a
                   >
                 </li>
@@ -198,14 +213,17 @@
                 <div class="flex items-center gap-2">
                   <span
                     ><img
+                      loading="lazy"
                       src="./images/Icons/16-01.png"
-                      class="max-w-[40px]"
+                      class="max-w-[35px]"
                       alt=""
                   /></span>
                   <div class="">
-                    <h1 class="lg:text-white text-main">اتصل بنا</h1>
+                    <h1 class="lg:text-white text-main text-[13px]">
+                      اتصل بنا
+                    </h1>
                     <p
-                      class="lg:text-white text-main text-[13px] font-normal"
+                      class="lg:text-white text-main text-[12px] font-normal"
                       style="direction: ltr"
                     >
                       +201001846667
@@ -215,13 +233,16 @@
                 <div class="flex items-center gap-2">
                   <span
                     ><img
+                      loading="lazy"
                       src="./images/Icons/17-01.png"
-                      class="max-w-[40px]"
+                      class="max-w-[35px]"
                       alt=""
                   /></span>
                   <div class="">
-                    <h1 class="lg:text-white text-main">راسلنا عبر البريد</h1>
-                    <p class="lg:text-white text-main text-[13px] font-normal">
+                    <h1 class="lg:text-white text-main text-[13px]">
+                      راسلنا عبر البريد
+                    </h1>
+                    <p class="lg:text-white text-main text-[12px] font-normal">
                       Sh3wZa@gmail.com
                     </p>
                   </div>
@@ -229,13 +250,16 @@
                 <div class="flex items-center gap-2">
                   <span
                     ><img
+                      loading="lazy"
                       src="./images/Icons/18-01.png"
-                      class="max-w-[40px]"
+                      class="max-w-[35px]"
                       alt=""
                   /></span>
                   <div class="">
-                    <h1 class="lg:text-white text-main">السعودية _ الرياض</h1>
-                    <p class="lg:text-white text-main text-[13px] font-normal">
+                    <h1 class="lg:text-white text-main text-[13px]">
+                      السعودية _ الرياض
+                    </h1>
+                    <p class="lg:text-white text-main text-[12px] font-normal">
                       عنوان الشركه
                     </p>
                   </div>
@@ -247,21 +271,13 @@
       </nav>
     </seaction>
 
-    <!-- Slider Head -->
-    <div class="relative overflow-hidden z-[9]" id="Home">
-      <img src="./images/slider.png" class="w-full h-[500px]" alt="" />
-      <!-- Wave SVG -->
-      <svg
-        class="absolute lg:bottom-[-195px] bottom-[-10px] right-0 w-full z-[9]"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,160L120,149.3C240,139,480,117,720,117.3C960,117,1200,139,1320,149.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-        ></path>
-      </svg>
+    <!-- Info Head Contact -->
+    <div class="text-center my-9">
+      <h4 class="text-[30px] font-bold">كن علي تواصل</h4>
+      <p class="max-w-[600px] m-auto mt-4">
+        يسعد مطابع رونق دائما مساعدة عملائنا ، حتى لو لم تكن عميلا ولا تخطط لأن
+        تكون عميلا لنا ، فسوف نبذل قصارى جهدنا لمساعدتك لأنها رؤيتنا الرئيسية
+      </p>
     </div>
 
     <!-- Form Contact -->
@@ -364,8 +380,15 @@
       <div class="container">
         <div class="grid grid-cols-12 gap-4 py-3 overflow-hidden">
           <div class="lg:col-span-4 col-span-12 px-4">
-            <img src="./images/logo.png" class="max-h-[100px]" alt="" />
-            <p class="max-w-[550px] my-[15px] text-[20px] text-white">
+            <img
+              loading="lazy"
+              src="./images/logo3.png"
+              class="max-h-[70px]"
+              alt=""
+            />
+            <p
+              class="max-w-[550px] my-[15px] leading-[30px] text-[13px] text-white"
+            >
               كيان راند تمتد خيراته لأعوام طويلة في محال الطباعة والتغليف
               والدعاية والإعلان عبر رحلة نجاح مشرفة استطعنا خلالها أن تقدم خدمات
               رائدة لعملائنا في المملكة العربية السعودية عملنا خلالها يدا بيد مع
@@ -419,42 +442,42 @@
           </div>
           <div class="lg:col-span-4 col-span-12 px-4 mt-5">
             <div>
-              <h5 class="text-main text-[30px]">الوصول السريع</h5>
+              <h5 class="text-main text-[20px]">الوصول السريع</h5>
               <ul
                 class="flex items-center flex-wrap lg:flex-row flex-col gap-y-4 my-5"
               >
                 <li class="w-[50%]">
-                  <a href="" class="text-white text-[25px]">الرئيسية</a>
+                  <a href="" class="text-white text-[16px]">الرئيسية</a>
                 </li>
                 <li class="w-[50%]">
-                  <a href="" class="text-white text-[25px]">من نحن</a>
+                  <a href="" class="text-white text-[16px]">من نحن</a>
                 </li>
                 <li class="w-[50%]">
-                  <a href="" class="text-white text-[25px]">خدماتنا</a>
+                  <a href="" class="text-white text-[16px]">خدماتنا</a>
                 </li>
                 <li class="w-[50%]">
-                  <a href="" class="text-white text-[25px]">مشاريعنا</a>
+                  <a href="" class="text-white text-[16px]">مشاريعنا</a>
                 </li>
                 <li class="w-[50%]">
-                  <a href="" class="text-white text-[25px]">المدونة</a>
+                  <a href="" class="text-white text-[16px]">المدونة</a>
                 </li>
                 <li class="w-[50%]">
-                  <a href="" class="text-white text-[25px]">اتصل بنا</a>
+                  <a href="" class="text-white text-[16px]">اتصل بنا</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="lg:col-span-4 col-span-12 px-4 mt-5">
             <div>
-              <h5 class="text-main text-[30px]">معلومات التواصل</h5>
+              <h5 class="text-main text-[20px]">معلومات التواصل</h5>
               <ul class="my-5">
                 <li class="my-5">
                   <a href="" class="flex items-center gap-3">
                     <span
-                      class="w-[40px] h-[40px] text-[20px] flex items-center justify-center bg-main text-secondary rounded-full"
+                      class="w-[40px] h-[40px] text-[15px] flex items-center justify-center bg-main text-secondary rounded-full"
                       ><i class="fa-solid fa-phone-volume"></i
                     ></span>
-                    <span style="direction: ltr" class="text-white text-[22px]"
+                    <span style="direction: ltr" class="text-white text-[16px]"
                       >+201001846667</span
                     >
                   </a>
@@ -462,10 +485,10 @@
                 <li class="my-5">
                   <a href="" class="flex items-center gap-3">
                     <span
-                      class="w-[40px] h-[40px] text-[20px] flex items-center justify-center bg-main text-secondary rounded-full"
+                      class="w-[40px] h-[40px] text-[15px] flex items-center justify-center bg-main text-secondary rounded-full"
                       ><i class="fa-solid fa-envelope"></i
                     ></span>
-                    <span style="direction: ltr" class="text-white text-[22px]"
+                    <span style="direction: ltr" class="text-white text-[16px]"
                       >Sh3wZa@gmail.com</span
                     >
                   </a>
@@ -473,10 +496,10 @@
                 <li class="my-5">
                   <a href="" class="flex items-center gap-3">
                     <span
-                      class="w-[40px] h-[40px] text-[20px] flex items-center justify-center bg-main text-secondary rounded-full"
+                      class="w-[40px] h-[40px] text-[15px] flex items-center justify-center bg-main text-secondary rounded-full"
                       ><i class="fa-solid fa-location-dot"></i
                     ></span>
-                    <span style="direction: ltr" class="text-white text-[25px]"
+                    <span style="direction: ltr" class="text-white text-[16px]"
                       >السعودية _ الرياض</span
                     >
                   </a>
@@ -490,7 +513,7 @@
 
     <!-- End Footer -->
     <div class="p-2 bg-main text-center">
-      <p class="text-white text-[22px]">جميع الحقوق محفوظة لرونق العطاء 2024</p>
+      <p class="text-white text-[18px]">جميع الحقوق محفوظة لرونق العطاء 2024</p>
     </div>
 
     <!-- Plugin Jquery -->
