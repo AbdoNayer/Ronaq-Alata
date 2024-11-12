@@ -68,11 +68,11 @@ $(document).ready(function () {
   // Scroll For Section
   $(document).on(
     "click",
-    "nav ul li a, .list-footer li a, .info-tab a",
+    "nav ul li a, .links-footer li a, .info-tab a",
     function (e) {
       $("html, body").animate(
         {
-          scrollTop: $("#" + $(this).data("value")).offset().top - 70,
+          scrollTop: $("#" + $(this).data("value")).offset().top - 170,
         },
         50
       );
