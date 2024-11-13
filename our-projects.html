@@ -33,6 +33,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
     />
+    <!-- CSS Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
     <!-- CSS Flowbite -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
@@ -95,7 +100,7 @@
                 class="lg:text-white text-main border-l border-r px-[10px] flex items-center justify-center"
                 >English</a
               >
-              <ul class="flex items-center lg:flex-row flex-col gap-2">
+              <ul class="flex items-center lg:flex-row flex-wrap gap-2">
                 <li>
                   <a
                     href=""
@@ -158,12 +163,15 @@
             <div
               class="list-head flex lg:items-center lg:ps-[70px] lg:flex-1 lg:justify-between lg:flex-row flex-col lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
             >
-              <ul class="flex items-center lg:flex-row flex-col">
+              <ul
+                class="flex items-center nav-list-header lg:flex-row flex-col"
+              >
                 <li
                   class="overflow-hidden active lg:my-0 my-2 lg:w-auto w-full"
                 >
                   <a
                     href="index.html"
+                    data-value="Home"
                     class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[13px] font-bold z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                     >الرئيسية</a
                   >
@@ -204,7 +212,9 @@
                   >
                 </li>
               </ul>
-              <div class="flex lg:items-center gap-[20px] lg:flex-row flex-col">
+              <div
+                class="flex lg:items-center gap-[20px] lg:flex-row flex-col lg:px-0 px-3"
+              >
                 <div class="flex items-center gap-2">
                   <span
                     ><img
@@ -260,6 +270,38 @@
                   </div>
                 </div>
               </div>
+              <ul
+                class="flex items-center lg:flex-row flex-wrap gap-4 mt-5 px-3 lg:hidden"
+              >
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-main text-white rounded-full"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-main text-white rounded-full"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-main text-white rounded-full"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-main text-white rounded-full"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -292,9 +334,9 @@
           class="grid grid-cols-12 gap-4 py-3 items-center justify-center overflow-hidden"
         >
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
@@ -302,33 +344,53 @@
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
-                  src="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
@@ -336,33 +398,53 @@
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
-                  src="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
@@ -370,33 +452,53 @@
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
-                  src="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
@@ -404,28 +506,48 @@
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
           <div class="lg:col-span-3 col-span-12 my-3 text-center">
-            <a class="text-center group">
+            <div class="text-center group">
               <div
-                class="bg-[#fcf7f0] w-full h-[150px] flex items-center justify-center rounded-[10px] p-3"
+                class="bg-[#fcf7f0] w-[220px] h-[220px] m-auto relative overflow-hidden flex items-center justify-center rounded-[10px] p-3"
               >
                 <img
                   loading="lazy"
-                  src="https://www.pngitem.com/pimgs/m/75-759411_clip-art-shop-logo-transparent-shop-logo-png.png"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
                   class="max-w-[160px] m-auto transition duration-500 ease-in-out group-hover:translate-y-[-10px]"
                   alt=""
                 />
+                <a
+                  href="https://static.vecteezy.com/system/resources/thumbnails/012/986/755/small_2x/abstract-circle-logo-icon-free-png.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
               </div>
               <h3 class="text-black text-[17px] mt-2 leading-[40px] relative">
                 طباعة أوفست
               </h3>
-            </a>
+            </div>
           </div>
         </div>
         <ul class="flex items-center justify-center gap-3 mt-9">
@@ -485,7 +607,7 @@
     <!-- Contact Us -->
     <div class="bg-gradient-to-r from-main to-mainOld p-4">
       <div class="container">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center lg:flex-row flex-col justify-between">
           <h2 class="text-white text-[20px]">نسعد بتواصلكم معنا</h2>
           <a
             href="contact-us.html"
@@ -516,7 +638,7 @@
               الأفراد والمؤسسات للرقي بمستوى الأداء والاحترافية في العمل بطرق
               إبداعية ومبتكرة
             </p>
-            <ul class="flex items-center lg:flex-row flex-col gap-3">
+            <ul class="flex items-center lg:flex-row flex-wrap gap-3">
               <li>
                 <a
                   href=""
@@ -573,17 +695,23 @@
                   >
                 </li>
                 <li class="w-[50%]">
-                  <a href="index.html#About" class="text-white text-[16px]"
+                  <a href="" data-value="About" class="text-white text-[16px]"
                     >من نحن</a
                   >
                 </li>
                 <li class="w-[50%]">
-                  <a href="index.html#Services" class="text-white text-[16px]"
+                  <a
+                    href=""
+                    data-value="Services"
+                    class="text-white text-[16px]"
                     >خدماتنا</a
                   >
                 </li>
                 <li class="w-[50%]">
-                  <a href="index.html#Projects" class="text-white text-[16px]"
+                  <a
+                    href=""
+                    data-value="Projects"
+                    class="text-white text-[16px]"
                     >مشاريعنا</a
                   >
                 </li>
@@ -825,6 +953,8 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
     ></script>
+    <!-- Plugin Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <!-- Plugin Flowbite -->
     <script
       type="text/javascript"
